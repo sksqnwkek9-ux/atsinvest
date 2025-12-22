@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS 제휴 거래소</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" id="logo-home">
+                <img src="Image/my_logo.png" alt="ATS Logo" class="logo-img">
+                <span class="logo-text">ATS</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link" data-page="home">홈</a>
+                <a href="#" class="nav-link" data-page="guide">초보자 가이드</a>
+                <a href="#" class="nav-link" data-page="simulation">모의투자</a>
+                <a href="#" class="nav-link" data-page="auto">자동매매</a>
+                <a href="#" class="nav-link" data-page="arcade">반응속도 테스트</a>
+            </nav>
+            <button class="inquiry-btn" id="inquiry-btn">문의하기</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page-content">
+            <section class="title-section">
+                <h1 class="main-title">ATS <span class="highlight-blue">제휴 거래소</span></h1>
+                <p class="subtitle">ATS 공식 제휴 맺은 거래소를 이용하고 혜택을 받아가세요!</p>
+            </section>
+
+            <!-- Exchange Cards Grid -->
+            <section class="cards-section">
+                <div class="cards-grid">
+                    <!-- Orange X Card -->
+                    <div class="exchange-card">
+                        <div class="card-logo orangex-logo">
+                            <img src="Image/GSG.png" alt="GSG Logo" class="card-logo-image">
+                        </div>
+                        <h3 class="exchange-name">Orange X</h3>
+                        <p class="card-description">
+                            <span>최대 <span class="highlight-purple">50,000 USDT</span><br>입금액 <span class="highlight-purple">50%까지</span> 리워드 지급</span>
+                            <span class="flame-icon">🔥</span>
+                        </p>
+                        <div class="card-buttons">
+                            <button class="btn btn-primary" id="signup-btn">가입하기</button>
+                            <button class="btn btn-secondary" id="guide-btn">이용 가이드</button>
+                            <button class="btn btn-payback" id="platform-info-btn">플랫폼 소개</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Beginner Guide Page -->
+        <div id="guide-page" class="page-content hidden">
+            <!-- Guide Header -->
+            <section class="guide-header">
+                <div class="guide-header-content">
+                    <h1 class="guide-title">초보자 가이드</h1>
+                    <div class="guide-illustration">
+                        <img src="Image/guide.png" alt="Guide" class="guide-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Tabs -->
+            <nav class="guide-tabs">
+                <button class="guide-tab active" data-category="all">전체</button>
+                <button class="guide-tab" data-category="signup">가입방법</button>
+                <button class="guide-tab" data-category="exchange">거래소 이용방법</button>
+                <button class="guide-tab" data-category="futures">선물거래의 기초강의</button>
+            </nav>
+
+            <!-- Separator -->
+            <div class="guide-separator"></div>
+
+            <!-- Article List -->
+            <section class="guide-articles">
+                <a href="#" class="article-item" data-category="signup" data-article="signup-pc">
+                    <span class="article-title">회원가입 PC</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="signup" data-article="signup-mobile">
+                    <span class="article-title">회원가입 모바일</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="exchange" data-article="deposit-withdraw">
+                    <span class="article-title">입/출금 가이드</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="futures-basics">
+                    <span class="article-title">선물거래란 무엇인가?</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="futures-contract">
+                    <span class="article-title">선물계약의 구조와 특징</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="leverage-margin">
+                    <span class="article-title">레버리지와 마진 이해하기</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="long-short">
+                    <span class="article-title">롱 포지션과 숏 포지션</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="liquidation">
+                    <span class="article-title">청산(Liquidation) 이해하기</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="funding-fee">
+                    <span class="article-title">펀딩 수수료와 프리미엄</span>
+                    <span class="article-arrow">></span>
+                </a>
+                <a href="#" class="article-item" data-category="futures" data-article="risk-management">
+                    <span class="article-title">리스크 관리 전략</span>
+                    <span class="article-arrow">></span>
+                </a>
+            </section>
+        </div>
+
+        <!-- ATS Simulation Page -->
+        <div id="simulation-page" class="page-content hidden">
+            <section class="simulation-section">
+                <div class="simulation-container">
+                    <h1 class="simulation-title">ATS <span class="highlight-blue">모의투자</span></h1>
+                    <a href="http://www.atsdemo.co.kr" target="_blank" class="simulation-btn" id="start-simulation-btn">모의투자 시작하기</a>
+                    <div class="demo-image-container">
+                        <img src="Image/demo1.png" alt="Demo" class="demo-image">
+                    </div>
+                    <div class="simulation-content">
+                        <p class="simulation-intro">
+                            실제 돈을 투자하기 전에 가상의 자금으로 거래를 연습할 수 있는 모의투자 서비스를 제공합니다.
+                            리스크 없이 암호화폐 거래의 모든 기능을 체험해보세요.
+                        </p>
+                        <div class="simulation-features">
+                            <div class="feature-item">
+                                <h3>🎯 실전 연습</h3>
+                                <p>실제 거래 환경과 동일한 조건으로 거래 연습</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>💰 무료 가상 자금</h3>
+                                <p>초기 가상 자금을 제공하여 바로 시작 가능</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>📊 실시간 차트</h3>
+                                <p>실제 시장 데이터를 기반으로 한 실시간 차트 제공</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>📈 전략 검증</h3>
+                                <p>다양한 투자 전략을 검증하고 학습 가능</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>🧠 매매 통계 분석</h3>
+                                <p>거래 성과를 수치로 확인하고 개선</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>🔔 자동신호</h3>
+                                <p>조건 충족 시 실시간 시그널 제공<br><small style="color: #666; font-size: 13px;">ATS 지표는 텔레그램에 문의해주세요</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Disclaimer Section -->
+                    <div class="disclaimer-section">
+                        <div class="disclaimer-header">
+                            <span class="disclaimer-icon">⚠️</span>
+                            <h3 class="disclaimer-title">중요 안내</h3>
+                        </div>
+                        <div class="disclaimer-content">
+                            <p class="disclaimer-main-text">
+                                본 사이트(ATS)는 <strong>실제 거래소가 아니며</strong>,<br>
+                                <strong>모의투자만 할 수 있는 플랫폼</strong>입니다.
+                            </p>
+                            <p class="disclaimer-text">
+                                이 방은 <span class="highlight-yellow">교육용 모의투자 커뮤니티</span>이며<br>
+                                실제 자금이 오가는 거래나 투자 권유와는 완전히 무관한 공간입니다.
+                            </p>
+                            <div class="disclaimer-warning">
+                                <p class="warning-text">
+                                    <strong>실거래를 시도하려는 사람들에 대한 사전 경고·리스크 방지입니다.</strong><br>
+                                    시장 구조와 변동성, 각종 리스크를 사전에 이해하고 학습할 수 있도록 제작된 교육·훈련용 시스템입니다.
+                                </p>
+                            </div>
+                            <div class="disclaimer-risks">
+                                <h4 class="risks-title">⚠️ 실제 시장에서는 다음과 같은 위험이 존재합니다:</h4>
+                                <ul class="risks-list">
+                                    <li>예상치 못한 손실</li>
+                                    <li>급격한 가격 변동</li>
+                                    <li>유동성 부족</li>
+                                    <li>원금 손실</li>
+                                    <li>증거금 부족</li>
+                                    <li>강제 청산</li>
+                                </ul>
+                                <p class="risks-notice">등 다양한 위험이 존재한다는 점을 반드시 유념해 주시기 바랍니다.</p>
+                            </div>
+                            <p class="disclaimer-footer">
+                                안전하고 즐거운 학습이 되시길 바랍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Arcade Page -->
+        <div id="arcade-page" class="page-content hidden">
+            <section class="arcade-section">
+                <div class="arcade-container">
+                    <div class="game-container">
+                        <div class="game-header">
+                            <h2 class="game-title">⚡ 투자 반응속도 클릭테스트</h2>
+                            <p class="game-description">
+                                가격 변동 신호에 대한<br>
+                                클릭 반응 시간을 측정하여<br>
+                                매매 판단 지연 가능성을 학습합니다.
+                            </p>
+                            <div class="game-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">최고 기록</span>
+                                    <span class="stat-value" id="best-time">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">평균 기록</span>
+                                    <span class="stat-value" id="avg-time">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">시도 횟수</span>
+                                    <span class="stat-value" id="attempts">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-area">
+                            <div class="game-screen" id="game-screen">
+                                <div class="game-instruction" id="game-instruction">
+                                    <h3>게임 방법</h3>
+                                    <p>화면이 <strong style="color: #4caf50;">초록색</strong>으로 바뀌면<br>가장 빠르게 클릭하세요!</p>
+                                    <p class="game-tip">빨간색일 때는 클릭하지 마세요!</p>
+                                </div>
+                            </div>
+                            <div class="game-controls">
+                                <button class="game-btn" id="start-game-btn">게임 시작</button>
+                                <button class="game-btn game-btn-secondary" id="reset-game-btn">기록 초기화</button>
+                            </div>
+                            <div class="game-result" id="game-result"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Auto Trading Page -->
+        <div id="auto-page" class="page-content hidden">
+            <section class="auto-section">
+                <div class="auto-container">
+                    <h1 class="auto-title">ATS <span class="highlight-blue">자동매매</span></h1>
+                    
+                    <div class="auto-image-container">
+                        <img src="Image/auto.png" alt="자동매매" class="auto-image">
+                    </div>
+
+                    <div class="auto-content">
+                        <div class="auto-intro">
+                            <h2>자동매매 시스템 소개</h2>
+                            <p>
+                                자동매매 시스템은 미리 설정한 조건과 전략에 따라 자동으로 매매를 실행하는 프로그램입니다.
+                                실시간 시장 데이터를 분석하여 최적의 매매 타이밍을 찾아 거래를 수행합니다.
+                            </p>
+                            <p>
+                                본 시스템은 교육 및 학습 목적으로 제공되며, 실제 투자 결정과 손익에 대한 모든 책임은 사용자 본인에게 있습니다.
+                            </p>
+                        </div>
+
+                        <div class="auto-features">
+                            <div class="auto-feature-item">
+                                <h3>🤖 자동 실행</h3>
+                                <p>설정한 전략에 따라 24시간 자동으로 매매 실행</p>
+                            </div>
+                            <div class="auto-feature-item">
+                                <h3>📊 데이터 분석</h3>
+                                <p>실시간 시장 데이터를 분석하여 최적의 타이밍 포착</p>
+                            </div>
+                            <div class="auto-feature-item">
+                                <h3>⚙️ 전략 설정</h3>
+                                <p>다양한 매매 전략을 커스터마이징하여 적용 가능</p>
+                            </div>
+                            <div class="auto-feature-item">
+                                <h3>📈 성과 추적</h3>
+                                <p>매매 내역과 수익률을 실시간으로 확인 가능</p>
+                            </div>
+                            <div class="auto-feature-item">
+                                <h3>🛑 리스크 관리 설정</h3>
+                                <p>손절·익절·포지션 한도 관리 지원</p>
+                            </div>
+                            <div class="auto-feature-item">
+                                <h3>🔄 전략 백테스트</h3>
+                                <p>과거 데이터 기반 전략 검증</p>
+                            </div>
+                        </div>
+
+                        <div class="auto-disclaimer">
+                            <div class="disclaimer-header">
+                                <span class="disclaimer-icon">⚠️</span>
+                                <h3 class="disclaimer-title">중요 안내 및 투자 책임 고지</h3>
+                            </div>
+                            
+                            <div class="disclaimer-content-box">
+                                <h4>📋 투자 책임</h4>
+                                <ul class="disclaimer-list">
+                                    <li>본 자동매매 시스템을 사용하여 발생하는 모든 투자 손익은 <strong>사용자 본인에게 귀속</strong>됩니다.</li>
+                                    <li>시스템 오류, 시장 변동성, 기술적 장애 등으로 인한 손실에 대한 책임은 사용자가 부담합니다.</li>
+                                    <li>ATS는 자동매매 시스템의 정확성이나 수익성을 보장하지 않습니다.</li>
+                                </ul>
+
+                                <h4>🔐 확약서 및 동의</h4>
+                                <ul class="disclaimer-list">
+                                    <li>자동매매 서비스 이용 전 반드시 <strong>확약서 작성 및 동의</strong>가 필요합니다.</li>
+                                    <li>투자 원금 손실 가능성을 충분히 이해하고 동의한 경우에만 서비스를 이용해주세요.</li>
+                                    <li>자동매매 설정 및 실행 전 모든 리스크를 숙지하고 신중하게 결정하시기 바랍니다.</li>
+                                    <li>투자 경험이 부족하거나 리스크를 감당하기 어려운 경우 자동매매 사용을 권장하지 않습니다.</li>
+                                </ul>
+
+                                <h4>⚡ 주의사항</h4>
+                                <ul class="disclaimer-list">
+                                    <li>시장 급변동 시 자동매매 시스템이 예상과 다르게 동작할 수 있습니다.</li>
+                                    <li>네트워크 오류, 시스템 장애 등으로 인해 매매가 누락되거나 지연될 수 있습니다.</li>
+                                    <li>과거 수익률이 미래 수익을 보장하지 않습니다.</li>
+                                    <li>투자 전 충분한 학습과 검토를 통해 자동매매 시스템을 이해한 후 사용하시기 바랍니다.</li>
+                                </ul>
+                            </div>
+
+                            <div class="auto-agreement">
+                                <p class="agreement-text">
+                                    위 내용을 모두 확인하고 이해하였으며, 자동매매 사용 시 발생하는 모든 책임과 리스크를 본인이 부담함에 동의합니다.
+                                </p>
+                                <button class="agreement-btn" id="agree-btn">확약서 작성 및 동의하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail Page -->
+        <div id="article-detail-page" class="page-content hidden">
+            <div class="article-detail-container">
+                <button class="back-button" id="back-to-guide">
+                    <span>←</span> 목록으로
+                </button>
+                <h2 class="article-detail-title" id="article-detail-title">회원가입 PC</h2>
+                
+                <div class="article-images" id="article-images">
+                    <!-- Images will be dynamically loaded -->
+                </div>
+                <div class="article-bottom-actions">
+                    <button class="back-to-list-btn" id="back-to-list-btn">목록으로</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <a href="http://t.me/amtoosa" target="_blank" class="floating-telegram-btn">
+        <img src="Image/tele.png" alt="Telegram" class="telegram-icon-img">
+        <span class="telegram-text">텔레그램 문의하기</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
